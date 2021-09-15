@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style>body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvaW5kZXguY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsU0FBUztFQUNUOztjQUVZO0VBQ1osbUNBQW1DO0VBQ25DLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFO2FBQ1c7QUFDYiIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBtYXJnaW46IDA7XG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJyxcbiAgICAnVWJ1bnR1JywgJ0NhbnRhcmVsbCcsICdGaXJhIFNhbnMnLCAnRHJvaWQgU2FucycsICdIZWx2ZXRpY2EgTmV1ZScsXG4gICAgc2Fucy1zZXJpZjtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG59XG5cbmNvZGUge1xuICBmb250LWZhbWlseTogc291cmNlLWNvZGUtcHJvLCBNZW5sbywgTW9uYWNvLCBDb25zb2xhcywgJ0NvdXJpZXIgTmV3JyxcbiAgICBtb25vc3BhY2U7XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.App {
+  text-align: center;
+  overflow-x: hidden;
+  font-family: 'PT Mono', monospace;
+
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(7px + 2vmin);
+  color: white;
+}
+
+
+
+.center2{
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background: white;
+  color: rgba(112, 112, 112,1);
+  font-family: Helvetica;
+  font-weight: 300;
+}
+
+.navbar link{
+  background-color: black;
+}
+
+.navbar__item {
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.navbar__item:link{
+  color: rgba(112, 112, 112,1);
+  text-decoration: none;
+}
+
+.navbar__item:visited{
+  color: rgba(112, 112, 112,1);
+  text-decoration: none;
+}
+
+.navbar__item:last-child{
+  margin-left: auto;
+}
+.navbar__item:active{
+  font-weight: 700;
+}
+
+
+/* mint page */
+.centered {
+  position: relative;
+}
+
+.centered h1{
+  margin: 0;
+}
+
+.container-input{
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  display: inline-flex;
+  font-size: 130%;
+}
+
+.mint-button{
+  padding: 10px 50px;
+  font-size: 140%;
+  font-family: 'PT Mono', monospace;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: crosshair;
+}
+
+#s-text{
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  overflow-y: hidden;
+}
+
+.input-field{
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  font-size: 24px;
+  font-family: 'PT Mono', monospace;
+}
+
+.input-field:focus{
+  border: none;
+  outline: none;
+}
+
+.bg-image{
+  opacity: 0.4;
+  position: relative;
+
+}
+
+#bg-img-1{
+  top: 129%;
+  left: -15%;
+  transform: rotate(15deg);
+  position: absolute;
+  width: 35vw;
+  display: block;
+
+}
+
+#bg-img-2{
+  top: 70%;
+  left: 80%;
+  transform: rotate(50deg);
+  position: absolute;
+  width: 35vw;
+  display: block;
+
+}
+
+/* Gallery styling */
+
+.img-container{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.galleryViewr{
+  padding: 1vw;
+}
+
+.galleryViewr img{
+  height: 30vh;
+  border: 2px solid white;
+  
+}
+
+.spinner{
+  height: 10vh;
+}
+
+#notOwner{
+  display: none;
+}
+
+/* market */
+#market-container{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.market-element img{
+  height: 30vh;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zcmMvQXBwLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsaUNBQWlDOztBQUVuQzs7QUFFQTtFQUNFLHVCQUF1QjtFQUN2QixpQkFBaUI7RUFDakIsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qiw0QkFBNEI7RUFDNUIsWUFBWTtBQUNkOzs7O0FBSUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFNBQVM7RUFDVCw0QkFBNEI7RUFDNUIsZ0NBQWdDO0FBQ2xDOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQSxXQUFXO0FBQ1g7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQiw0QkFBNEI7RUFDNUIsc0JBQXNCO0VBQ3RCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2Ysc0JBQXNCO0VBQ3RCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLDRCQUE0QjtFQUM1QixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSw0QkFBNEI7RUFDNUIscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxnQkFBZ0I7QUFDbEI7OztBQUdBLGNBQWM7QUFDZDtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLFNBQVM7QUFDWDs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQiw4QkFBOEI7RUFDOUIsb0JBQW9CO0VBQ3BCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLGlDQUFpQztFQUNqQyxZQUFZO0VBQ1osdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSw2QkFBNkI7RUFDN0IsWUFBWTtFQUNaLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsZUFBZTtFQUNmLGlDQUFpQztBQUNuQzs7QUFFQTtFQUNFLFlBQVk7RUFDWixhQUFhO0FBQ2Y7O0FBRUE7RUFDRSxZQUFZO0VBQ1osa0JBQWtCOztBQUVwQjs7QUFFQTtFQUNFLFNBQVM7RUFDVCxVQUFVO0VBQ1Ysd0JBQXdCO0VBQ3hCLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsY0FBYzs7QUFFaEI7O0FBRUE7RUFDRSxRQUFRO0VBQ1IsU0FBUztFQUNULHdCQUF3QjtFQUN4QixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLGNBQWM7O0FBRWhCOztBQUVBLG9CQUFvQjs7QUFFcEI7RUFDRSxvQkFBb0I7RUFDcEIsbUJBQW1CO0VBQ25CLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxZQUFZO0VBQ1osdUJBQXVCOztBQUV6Qjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQSxXQUFXO0FBQ1g7RUFDRSxvQkFBb0I7RUFDcEIsbUJBQW1CO0VBQ25CLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxZQUFZO0FBQ2QiLCJzb3VyY2VzQ29udGVudCI6WyIuQXBwIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBvdmVyZmxvdy14OiBoaWRkZW47XG4gIGZvbnQtZmFtaWx5OiAnUFQgTW9ubycsIG1vbm9zcGFjZTtcblxufVxuXG4uQXBwLWhlYWRlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICBtaW4taGVpZ2h0OiAxMDB2aDtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgZm9udC1zaXplOiBjYWxjKDdweCArIDJ2bWluKTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG5cblxuLmNlbnRlcjJ7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAxNDAlO1xuICBsZWZ0OiA1MCU7XG4gIC8qIGJyaW5nIHlvdXIgb3duIHByZWZpeGVzICovXG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xufVxuXG4uQXBwLWxpbmsge1xuICBjb2xvcjogIzYxZGFmYjtcbn1cblxuLyogbmF2YmFyICovXG4ubmF2YmFyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgYmFja2dyb3VuZDogd2hpdGU7XG4gIGNvbG9yOiByZ2JhKDExMiwgMTEyLCAxMTIsMSk7XG4gIGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2E7XG4gIGZvbnQtd2VpZ2h0OiAzMDA7XG59XG5cbi5uYXZiYXIgbGlua3tcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG59XG5cbi5uYXZiYXJfX2l0ZW0ge1xuICBwYWRkaW5nOiAxNnB4IDE2cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xufVxuXG4ubmF2YmFyX19pdGVtOmxpbmt7XG4gIGNvbG9yOiByZ2JhKDExMiwgMTEyLCAxMTIsMSk7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuLm5hdmJhcl9faXRlbTp2aXNpdGVke1xuICBjb2xvcjogcmdiYSgxMTIsIDExMiwgMTEyLDEpO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG59XG5cbi5uYXZiYXJfX2l0ZW06bGFzdC1jaGlsZHtcbiAgbWFyZ2luLWxlZnQ6IGF1dG87XG59XG4ubmF2YmFyX19pdGVtOmFjdGl2ZXtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbn1cblxuXG4vKiBtaW50IHBhZ2UgKi9cbi5jZW50ZXJlZCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cblxuLmNlbnRlcmVkIGgxe1xuICBtYXJnaW46IDA7XG59XG5cbi5jb250YWluZXItaW5wdXR7XG4gIGJvcmRlci10b3A6IDJweCBzb2xpZCB3aGl0ZTtcbiAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkIHdoaXRlO1xuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAgZm9udC1zaXplOiAxMzAlO1xufVxuXG4ubWludC1idXR0b257XG4gIHBhZGRpbmc6IDEwcHggNTBweDtcbiAgZm9udC1zaXplOiAxNDAlO1xuICBmb250LWZhbWlseTogJ1BUIE1vbm8nLCBtb25vc3BhY2U7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG4gIGJvcmRlcjogbm9uZTtcbiAgY3Vyc29yOiBjcm9zc2hhaXI7XG59XG5cbiNzLXRleHR7XG4gIG1pbi1oZWlnaHQ6IDEwMHZoO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgY29sb3I6IHdoaXRlO1xuICBvdmVyZmxvdy15OiBoaWRkZW47XG59XG5cbi5pbnB1dC1maWVsZHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyOiBub25lO1xuICBtYXJnaW4tbGVmdDogMTBweDtcbiAgZm9udC1zaXplOiAyNHB4O1xuICBmb250LWZhbWlseTogJ1BUIE1vbm8nLCBtb25vc3BhY2U7XG59XG5cbi5pbnB1dC1maWVsZDpmb2N1c3tcbiAgYm9yZGVyOiBub25lO1xuICBvdXRsaW5lOiBub25lO1xufVxuXG4uYmctaW1hZ2V7XG4gIG9wYWNpdHk6IDAuNDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuXG59XG5cbiNiZy1pbWctMXtcbiAgdG9wOiAxMjklO1xuICBsZWZ0OiAtMTUlO1xuICB0cmFuc2Zvcm06IHJvdGF0ZSgxNWRlZyk7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgd2lkdGg6IDM1dnc7XG4gIGRpc3BsYXk6IGJsb2NrO1xuXG59XG5cbiNiZy1pbWctMntcbiAgdG9wOiA3MCU7XG4gIGxlZnQ6IDgwJTtcbiAgdHJhbnNmb3JtOiByb3RhdGUoNTBkZWcpO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHdpZHRoOiAzNXZ3O1xuICBkaXNwbGF5OiBibG9jaztcblxufVxuXG4vKiBHYWxsZXJ5IHN0eWxpbmcgKi9cblxuLmltZy1jb250YWluZXJ7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBmbGV4LXdyYXA6IHdyYXA7XG59XG5cbi5nYWxsZXJ5Vmlld3J7XG4gIHBhZGRpbmc6IDF2dztcbn1cblxuLmdhbGxlcnlWaWV3ciBpbWd7XG4gIGhlaWdodDogMzB2aDtcbiAgYm9yZGVyOiAycHggc29saWQgd2hpdGU7XG4gIFxufVxuXG4uc3Bpbm5lcntcbiAgaGVpZ2h0OiAxMHZoO1xufVxuXG4jbm90T3duZXJ7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qIG1hcmtldCAqL1xuI21hcmtldC1jb250YWluZXJ7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBmbGV4LXdyYXA6IHdyYXA7XG59XG5cbi5tYXJrZXQtZWxlbWVudCBpbWd7XG4gIGhlaWdodDogMzB2aDtcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><header class="App-header"><div class="Bg-imgs"></div><nav class="navbar"><a class="navbar__title navbar__item" href="http://localhost:3000/">Home</a><a class="navbar__item" href="http://localhost:3000/Gallery">Gallery</a><a class="navbar__item" href="http://localhost:3000/Marketplace">Marketplace</a><div class="navbar__item">Rarity check</div><div class="navbar__item"><button class="meta"><span>Connect to metamask</span></button></div></nav><div class="Main"><div id="mint-page"><div class="centered"><img src="./React App_files/GenA3.png" style="height: 500px;"><p><h1>Synthetic Noise</h1>Minting starts on: 20 sept 2021</p><div class="container-input"><input type="number" step="1" class="input-field" placeholder="1" min="1" max="25" value="1" style="padding: 10px;"><input type="button" name="Mint" text="mint" class="mint-button" value="mint"></div></div><div id="s-text"><div class="center2"><p>Synthetic Noise is an algorithmically-generated media collection, based on mathematical functions.<br>The artificial DNA is formulated on a set of mathematical functions, some of them are well known, because of this we introduce: Noise.<br>Noise gives us caos and rapresents the Entropy of the universe. Holding SN will give you access to the first NFT Marketplace on Arbitrum.</p></div><div class="bg-image"><img src="./React App_files/main2.png" id="bg-img-1"><img src="./React App_files/main3.jpg" id="bg-img-2"></div></div></div></div></header></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js"></script><script src="./React App_files/vendors_main.chunk.js"></script><script src="./React App_files/main.chunk.js"></script>
+
+</body></html>

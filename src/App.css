@@ -1,0 +1,232 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  font-family: 'PT Mono', monospace;
+  max-width: 100%;
+
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(7px + 2vmin);
+  color: white;
+}
+
+
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  background: black;
+  color: white;
+  font-weight: 300;
+  font-family: 'PT Mono', monospace;
+}
+
+.navbar link{
+  color: white;
+}
+
+.navbar__item {
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.navbar__item:link{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__item:visited{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__item:last-child{
+  margin-left: auto;
+}
+.navbar__item:active{
+  font-weight: 700;
+}
+
+.meta{
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-family: 'PT Mono', monospace;
+  cursor: crosshair;
+  font-size: 2vh;
+}
+
+/* mint page */
+.centered {
+  position: relative;
+  min-height: 100vh;
+}
+
+.disclaimer{
+  color:silver;
+  font-size: 2vh;
+
+}
+
+.social{
+  /*position: absolute;
+  bottom: 7vh;*/
+
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99;
+}
+
+.social img{
+  height: 2vh;  
+  margin: 0.5vw;
+}
+
+#main-pic{
+  width: 35vw;
+}
+
+.centered h1{
+  margin: 0;
+}
+
+.container-input{
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  display: inline-flex;
+  font-size: 130%;
+}
+
+.mint-button{
+  padding: 10px 50px;
+  font-size: 140%;
+  font-family: 'PT Mono', monospace;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: crosshair;
+}
+
+
+
+.input-field{
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  font-size: 24px;
+  font-family: 'PT Mono', monospace;
+}
+
+.input-field:focus{
+  border: none;
+  outline: none;
+}
+
+#s-text{
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  position: relative
+}
+
+.center2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.bg-image{
+  opacity: 0.4;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  overflow: hidden;
+}
+
+#bg-img-1{
+  top: 50%;
+  left: -15%;
+  transform: rotate(15deg);
+  position: absolute;
+  width: 35vw;
+}
+
+#bg-img-2{
+  top: 5%;
+  left: 80%;
+  transform: rotate(50deg);
+  position: absolute;
+  width: 35vw;
+
+}
+
+#s-2{
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+#slider img{
+  height: 300px;
+  border: 3px solid white;
+  position: relative;
+}
+
+#slider{
+  top: 100%;
+}
+/* Gallery styling */
+
+.img-container{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.galleryViewr{
+  padding: 1vw;
+}
+
+.galleryViewr img{
+  height: 30vh;
+  border: 2px solid white;
+  
+}
+
+.spinner{
+  height: 10vh;
+}
+
+#notOwner{
+  display: none;
+}
+
+/* market */
+#market-container{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.market-element img{
+  height: 30vh;
+}
