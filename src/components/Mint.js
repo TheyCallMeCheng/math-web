@@ -70,7 +70,7 @@ function Mint(){
                 <img id="main-pic" src={process.env.PUBLIC_URL + 'main-pic.png'} />
                 <p>
                 <h1>Synthetic Noise</h1>
-                Minting starts on: 20 sept 2021
+                Minting starts on: TBA
                 </p>
                 <div class="container-input">
                     <input type="number" step="1" class="input-field" value={input} onInput={e => setInput(e.target.value)} placeholder="1" min="1" max="25" style={{padding: "10px", }}></input>
@@ -91,11 +91,8 @@ function Mint(){
                     <p>
                         Synthetic Noise is an algorithmically-generated media collection, based on mathematical functions.
                         <br />
-                        The artificial DNA is formulated on a set of mathematical functions, some of them are well known, because of this
-                        we introduce: Noise.
+                        The artificial DNA is formulated on a set of mathematical functions, colors and noise.
                         <br />
-                        Noise gives us caos and rapresents the Entropy of the universe.
-                        Holding SN will give you access to the first NFT Marketplace on Arbitrum.
                     </p>
                 </div>
                 <div class="bg-image">
