@@ -13,9 +13,32 @@ function Navigation(){
     async function connect() {
         try {
             await activate(injected)
-        } catch (ex) {
-        console.log(ex)
-        }
+            const chainID = await window.ethereum.request({ method: 'eth_chainId' });
+            console.log(chainID);
+
+            try{
+                //To change during depl to 0xa4b1 (arbi)
+                if(chainID != "0x4"){
+                    await window.ethereum.request({
+                        method: 'wallet_switchEthereumChain',
+                        params: [{ chainId: '0x4' }],
+                      });}
+                    }catch(switchError){
+                        if (switchError.code === 4902) {
+                            try {
+                                await window.ethereum.request({
+                                    method: 'wallet_addEthereumChain',
+                                    params: [{ chainId: '0xa4b1', rpcUrl: 'https://arb1.arbitrum.io/rpc'}],
+                                });
+                            } catch (addError) {
+                                //do nothing
+                                console.log("Unsupported error")
+                            }
+                        }
+                    }
+            } catch (ex) {
+                console.log(ex)
+            }
     }
 
     async function disconnect() {
@@ -40,6 +63,9 @@ function Navigation(){
         <div className='navbar__item'>
             <button className='meta' onClick={connect}>
                 {active ? <span>{shortAccount(account)}</span> : <span>Connect to metamask</span>}
+                <div id="unsupported chain">
+
+                </div>
             </button>
         </div>        
     </nav>

@@ -79,8 +79,13 @@ function Mint(){
                 <p class='disclaimer'>Make sure you are connected to Arbitrum Mainnet</p>
 
                 <div class="social">
-                    <img src={process.env.PUBLIC_URL + 'twitter-icon.png'} />
-                    <img src={process.env.PUBLIC_URL + 'discord-icon.png'} />
+                    <a href="https://twitter.com/SynthNoise">
+                        <img src={process.env.PUBLIC_URL + 'twitter-icon.png'} />
+                    </a>
+                    <a href="https://discord.gg/ubjzftc3">
+                        <img src={process.env.PUBLIC_URL + 'discord-icon.png'} />
+                    </a>
+                    
                     <img src={process.env.PUBLIC_URL + 'telegram-icon.png'} />
 
                 </div>
