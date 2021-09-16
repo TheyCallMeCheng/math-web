@@ -109,7 +109,7 @@ function Mint(){
                     <h2>Minting details</h2>
                     <p>
                         
-                        Total supply: TBA1
+                        Total supply: TBA3
 
                     </p>
                     
