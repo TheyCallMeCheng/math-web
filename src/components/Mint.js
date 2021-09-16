@@ -107,14 +107,7 @@ function Mint(){
                 <div class="center2" >
                     <h2>Minting details</h2>
                     <p>
-                        Mint price bonding curve:
-                        <br/>
-                        From 0 to 5k minted: 0.02
-                        <br/>
-                        From 5k to 7.5k minted: 0.03
-                        <br/>
-                        From 7.5k to 10k minted: 0.04
-                        <br/>
+                        
                         Total supply: TBA
 
                     </p>
