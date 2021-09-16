@@ -34,7 +34,7 @@ function Mint(){
         console.log("Mint price= " + mintPrice);
 
         const mint = await contract.methods.mint(
-            BigNumber(input)
+            BigNumber(input.toString())
         );
         var encodedABI = mint.encodeABI();
         
