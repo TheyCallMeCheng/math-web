@@ -28,7 +28,8 @@ function Mint(){
         const chainID = await window.ethereum.request({ method: 'eth_chainId' });
         console.log(chainID);
         console.log(accounts[0]);
-        console.log("Test");
+        console.log("Test2");
+        console.log("DC");
 
         let mintPrice = await contract.methods.getPrice().call();
         mintPrice = mintPrice * input; //We must calculate the price * the minting number
