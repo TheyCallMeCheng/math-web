@@ -34,13 +34,12 @@ function Mint(){
         console.log("Mint price= " + mintPrice);
 
         const mint = await contract.methods.mint(
-            BigNumber(input.toString())
+            BigNumber(input)
         );
         var encodedABI = mint.encodeABI();
         
         //To remove during deployment
         console.log("Account: " + accounts[0]);
-        console.log("Data: " + encodedABI);
 
         var tx = {
             from: accounts[0],
