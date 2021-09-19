@@ -103,7 +103,7 @@ function Gallery(){
                     </div> 
                     <div>
                         <h3 id="notOwner">
-                            You don't own any SN :(
+                            You don't own any SN
                         </h3>
                     </div>
                 </div>

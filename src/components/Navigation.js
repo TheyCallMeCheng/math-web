@@ -58,7 +58,7 @@ function Navigation(){
         <Link to='/' className='navbar__title navbar__item'>Home</Link>
         <Link to="/Gallery" className='navbar__item' >Gallery</Link>
         <Link to='/Marketplace' className='navbar__item' >Marketplace</Link>
-        <div className='navbar__item'>Rarity Check</div>
+        <Link to="/Rarity" className='navbar__item'>Rarity Check</Link>
 
         <div className='navbar__item'>
             <button className='meta' onClick={connect}>

@@ -15,9 +15,8 @@
   color: white;
 }
 
-body{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+body {
+  scrollbar-width: none;
 }
 
 .App-link {
@@ -271,6 +270,6 @@ body{
   transform: rotate( 90deg);
   padding: 1vw;
   border: 2px solid white;
-
+  margin: 1vw;
 }
 

@@ -5,6 +5,7 @@ import Mint from './components/Mint'
 import Main from './components/Main'
 import Gallery from './components/Gallery'
 import Marketplace from './components/Marketplace'
+import Rarity from "./components/Rarity";
 import { Web3ReactProvider } from '@web3-react/core'
 import {
   BrowserRouter as Router,
@@ -32,6 +33,7 @@ function App() {
                 <Route exact path="/" component={Main} />
                 <Route exact path="/Gallery" component={Gallery} />
                 <Route exact path="/Marketplace" component={Marketplace} />
+                <Route exact path="/Rarity" Component={Rarity} />
             </Router>
           </Web3ReactProvider>
       </header>

@@ -95,8 +95,9 @@ function Mint(){
                     <p>
                         Synthetic Noise is an algorithmically-generated media collection, based on mathematical functions.
                         <br />
-                        The artificial DNA is formulated on a set of mathematical functions, colors and noise.
+                        The artificial DNA is formulated on a set of mathematical functions, colors, patterns and noise.
                         <br />
+                        The total combinations possible are over 15M+, each and every NFT is unique and there cannot be two with the same properties.
                     </p>
                 </div>
                 <div class="bg-image">
@@ -109,9 +110,7 @@ function Mint(){
                 <div class="center2" >
                     <h2>Minting details</h2>
                     <p>
-                        
-                        Total supply: TBA3
-
+                        Minting details will be revealed soon on our Discord server
                     </p>
                     
                 </div>
