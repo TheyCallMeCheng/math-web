@@ -121,21 +121,21 @@ function Mint(){
             <div id="s-3">
                 <h2>Preview</h2>
                     <div class="preview">
-                        <img src={process.env.PUBLIC_URL + '/preview/g1.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g2.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g3.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g4.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g5.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g6.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g7.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g8.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g9.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g10.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g11.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g12.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g13.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g14.png'} />
-                        <img src={process.env.PUBLIC_URL + '/preview/g15.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g1.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g2.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g3.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g4.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g5.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g6.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g7.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g8.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g9.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g10.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g11.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g12.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g13.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g14.png'} />
+                        <img src={process.env.PUBLIC_URL + 'g15.png'} />
                 </div>
                
             </div>
