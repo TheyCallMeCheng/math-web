@@ -28,8 +28,7 @@ function Mint(){
         const chainID = await window.ethereum.request({ method: 'eth_chainId' });
         console.log(chainID);
         console.log(accounts[0]);
-        console.log("Test2");
-        console.log("DC");
+
 
         let mintPrice = await contract.methods.getPrice().call();
         mintPrice = mintPrice * input; //We must calculate the price * the minting number
@@ -115,6 +114,30 @@ function Mint(){
 
                     </p>
                     
+                </div>
+               
+            </div>
+
+            <div id="s-3">
+                <h2>Preview</h2>
+                <div class="center2 preview" >    
+                    <div>
+                        <img src={process.env.PUBLIC_URL + '/preview/g1.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g2.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g3.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g4.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g5.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g6.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g7.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g8.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g9.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g10.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g11.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g12.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g13.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g14.png'} />
+                        <img src={process.env.PUBLIC_URL + '/preview/g15.png'} />
+                    </div>
                 </div>
                
             </div>

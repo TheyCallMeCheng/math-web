@@ -230,3 +230,24 @@
 .market-element img{
   height: 30vh;
 }
+
+#s-3{
+  min-height: 200vh;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.preview{
+  min-width: 80vw;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.preview img{
+  width: 15vw;
+  border: 2px solid white;
+  padding: 1vw;
+  margin: 1vw;
+}
