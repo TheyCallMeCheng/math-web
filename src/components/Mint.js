@@ -120,8 +120,7 @@ function Mint(){
 
             <div id="s-3">
                 <h2>Preview</h2>
-                <div class="center2 preview" >    
-                    <div>
+                    <div class="preview">
                         <img src={process.env.PUBLIC_URL + '/preview/g1.png'} />
                         <img src={process.env.PUBLIC_URL + '/preview/g2.png'} />
                         <img src={process.env.PUBLIC_URL + '/preview/g3.png'} />
@@ -137,7 +136,6 @@ function Mint(){
                         <img src={process.env.PUBLIC_URL + '/preview/g13.png'} />
                         <img src={process.env.PUBLIC_URL + '/preview/g14.png'} />
                         <img src={process.env.PUBLIC_URL + '/preview/g15.png'} />
-                    </div>
                 </div>
                
             </div>

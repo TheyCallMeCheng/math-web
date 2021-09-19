@@ -3,7 +3,7 @@
   overflow-x: hidden;
   font-family: 'PT Mono', monospace;
   max-width: 100%;
-
+  
 }
 
 .App-header {
@@ -15,9 +15,10 @@
   color: white;
 }
 
-
-
-
+body{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 .App-link {
   color: #61dafb;
@@ -232,17 +233,16 @@
 }
 
 #s-3{
-  min-height: 200vh;
+  height: 75vh;
   background-color: black;
   color: white;
   position: relative;
 }
 
-.preview{
-  min-width: 80vw;
+/* .preview{
+  min-width: 100vw;
   display: inline-flex;
   flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .preview img{
@@ -250,4 +250,27 @@
   border: 2px solid white;
   padding: 1vw;
   margin: 1vw;
+} */
+
+.preview{
+  width: 31vw;
+  height: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg) translateY(-31%);;
+  transform-origin: right top;
+  
 }
+
+.preview::-webkit-scrollbar {
+  display: none;
+}
+
+.preview img{
+  width: 26vw;
+  transform: rotate( 90deg);
+  padding: 1vw;
+  border: 2px solid white;
+
+}
+
