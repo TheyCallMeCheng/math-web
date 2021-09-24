@@ -105,18 +105,6 @@ function Mint(){
                     <img src={process.env.PUBLIC_URL + 'main3.jpg'}  id="bg-img-2" />
                 </div>
             </div>
-
-            <div id="s-2">
-                <div class="center2" >
-                    <h2>Minting details</h2>
-                    <p>
-                        Minting details will be revealed soon on our Discord server
-                    </p>
-                    
-                </div>
-               
-            </div>
-
             <div id="s-3">
                 <h2>Preview</h2>
                     <div class="preview">
@@ -138,6 +126,18 @@ function Mint(){
                 </div>
                
             </div>
+            <div id="s-2">
+                <div class="center2" >
+                    <h2>Minting details</h2>
+                    <p>
+                        Minting details will be revealed soon on our Discord server
+                    </p>
+                    
+                </div>
+               
+            </div>
+
+            
         </div>
     );
 }
