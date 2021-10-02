@@ -78,15 +78,15 @@ function Mint(){
                 <p class='disclaimer'>Make sure you are connected to Arbitrum Mainnet</p>
 
                 <div class="social">
-                    <a href="https://twitter.com/SynthNoise">
+                    <a href="https://twitter.com/SynthNoise" target="_blank">
                         <img src={process.env.PUBLIC_URL + 'twitter-icon.png'} />
                     </a>
-                    <a href="https://discord.gg/ubjzftc3">
+                    <a href="https://discord.gg/ubjzftc3" target="_blank">
                         <img src={process.env.PUBLIC_URL + 'discord-icon.png'} />
                     </a>
-                    
-                    <img src={process.env.PUBLIC_URL + 'telegram-icon.png'} />
-
+                    <a href="https://t.me/Sythetic_Noise" target="_blank">
+                        <img src={process.env.PUBLIC_URL + 'telegram-icon.png'} />
+                    </a>
                 </div>
                 
             </div>

@@ -1,8 +1,7 @@
 function Rarity(){
-    
+    const url = "https://cdn.filestackcontent.com/XYrHCaFGRSaq0EPKY1S6";
     return(
-        <h1 style="color:white">Coming soon</h1>
-        
+        <img src={url} style={{width: 650}} />
     );
 }
 export default Rarity;
