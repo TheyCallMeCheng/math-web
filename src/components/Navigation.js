@@ -56,13 +56,18 @@ function Navigation(){
     return(
     <nav className='navbar' >
         <Link to='/' className='navbar__title navbar__item'>Home</Link>
-        <Link to="/Gallery" className='navbar__item' >Gallery</Link>
-        <Link to='/Marketplace' className='navbar__item' >Marketplace</Link>
-        <Link to="/Rarity" className='navbar__item'>Rarity Check</Link>
+        
+        {/* <Link class="isDisabled" to="/Gallery" className='navbar__item' >Gallery</Link>
+        <Link class="isDisabled" to='/Marketplace' className='navbar__item' >Marketplace</Link>
+        <Link class="isDisabled" to="/Rarity" className='navbar__item'>Rarity Check</Link> */}
+        
+        <Link to="/" className='navbar__item2' >Gallery</Link>
+        <Link to='/' className='navbar__item2' >Marketplace</Link>
+        <Link to="/" className='navbar__item2'>Rarity Check</Link>
 
         <div className='navbar__item'>
             <button className='meta' onClick={connect}>
-                {active ? <span>{shortAccount(account)}</span> : <span>Connect to metamask</span>}
+                {active ? <span>{shortAccount(account)}</span> : <span class="hide">Connect to wallet</span>}
                 <div id="unsupported chain">
 
                 </div>

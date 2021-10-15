@@ -68,6 +68,30 @@
   font-weight: 700;
 }
 
+.navbar__item2 {
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.navbar__item2:link{
+  color: gray;
+  text-decoration: none;
+}
+
+.navbar__item2:visited{
+  color: gray;
+  text-decoration: none;
+}
+
+.navbar__item2:last-child{
+  margin-left: auto;
+}
+.navbar__item2:active{
+  font-weight: 700;
+}
+
 .meta{
   background-color: transparent;
   border: none;
@@ -129,11 +153,29 @@
   cursor: pointer;
 }
 
+
 .mint-button:hover{
   text-decoration: underline;  
 }
 
+.dwl_parent{
+  background-color: black;
+  border: none;
+}
 
+.download_button{
+  padding: 10px 50px;
+  font-size: 150%;
+  font-family: 'PT Mono', monospace;
+  color: white;
+  background-color: black;
+  border: 0px;
+  text-decoration: none;
+}
+
+.download_button:hover{
+  border: 3px solid white;
+}
 
 .input-field{
   background-color: transparent;
@@ -299,4 +341,8 @@
   background-color: #080808;
   border-radius: 10px;
   border: 3px solid #ffffff;
+}
+
+.hide{
+  display: none;
 }

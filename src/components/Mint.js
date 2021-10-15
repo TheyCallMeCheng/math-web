@@ -69,22 +69,30 @@ function Mint(){
                 <img id="main-pic" src={process.env.PUBLIC_URL + 'main-pic.png'} />
                 <p>
                 <h1>Synthetic Noise</h1>
-                Minting starts on: TBA
+                <br/>
+                An algorithmically created media collection that aims to depict
+                <br/>
+                the beauty of mathematics through generative art
                 </p>
-                <div class="container-input">
+                <button class="dwl_parent">
+                    <a class="download_button" href={process.env.PUBLIC_URL + 'SNpresentation.pdf'} download>
+                        Download blackpaper
+                    </a>
+                </button>
+                <div class="container-input hide">
                     <input type="number" step="1" class="input-field" value={input} onInput={e => setInput(e.target.value)} placeholder="1" min="1" max="25" style={{padding: "10px", }}></input>
                     <input type="button" value="mint" name="Mint" text="mint" class="mint-button" onClick={sendMint}></input>
                 </div>
-                <p class='disclaimer'>Make sure you are connected to Arbitrum Mainnet</p>
+                <p class='disclaimer hide'>Make sure you are connected to Arbitrum Mainnet</p>
 
                 <div class="social">
                     <a href="https://twitter.com/SynthNoise" target="_blank">
                         <img src={process.env.PUBLIC_URL + 'twitter-icon.png'} />
                     </a>
-                    <a href="https://discord.gg/ubjzftc3" target="_blank">
+                    <a href="https://discord.gg/Kfgm3JUE" target="_blank">
                         <img src={process.env.PUBLIC_URL + 'discord-icon.png'} />
                     </a>
-                    <a href="https://t.me/Sythetic_Noise" target="_blank">
+                    <a class="hide" href="https://t.me/Sythetic_Noise" target="_blank">
                         <img src={process.env.PUBLIC_URL + 'telegram-icon.png'} />
                     </a>
                 </div>
@@ -93,11 +101,18 @@ function Mint(){
             <div id="s-text" >
                 <div class="center2">
                     <p>
-                        Synthetic Noise is an algorithmically-generated media collection, based on mathematical functions.
-                        <br />
-                        The artificial DNA is formulated on a set of mathematical functions, colors, patterns and noise.
-                        <br />
-                        The total combinations possible are over 15M+, each and every NFT is unique and there cannot be two with the same properties.
+                        Each piece portrays a unique mathematical function immersed in solid color background. Some functions are simple and well-known by anyone. Others are complex and shocking to think they derive from pure mathematical formulas.
+                    </p>
+                    <br/>
+                    <br/>
+                    <p>
+                        To obtain something truly unique, some of them are deformed with the introduction of noise! Noise gives us chaos. Noise gives us beauty. Noise gives us the perfect amount of imperfectness, just like the world we live in.         
+                    </p>
+                    <br/>
+                    <br/>
+                    <p>
+                        
+                        Noise helps us generate a collection that is always surprising and never boring to explore.
                     </p>
                 </div>
                 <div class="bg-image">
