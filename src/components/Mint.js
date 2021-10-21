@@ -75,7 +75,7 @@ function Mint(){
                 the beauty of mathematics through generative art
                 </p>
                 <button class="dwl_parent">
-                    <a class="download_button" href={process.env.PUBLIC_URL + 'SNpresentation.pdf'} download>
+                    <a class="download_button" href={process.env.PUBLIC_URL + 'SN_blackpaper.pdf'} download>
                         Download blackpaper
                     </a>
                 </button>

@@ -28,7 +28,7 @@ function App() {
           <Web3ReactProvider getLibrary={getLibrary}>
 
             <Router>
-              <Navigation />
+              {/*<Navigation />*/}
 
                 <Route exact path="/" component={Main} />
                 <Route exact path="/Gallery" component={Gallery} />
