@@ -89,7 +89,7 @@ function Mint(){
                     <a href="https://twitter.com/SynthNoise" target="_blank">
                         <img src={process.env.PUBLIC_URL + 'twitter-icon.png'} />
                     </a>
-                    <a href="https://discord.gg/Kfgm3JUE" target="_blank">
+                    <a href="https://discord.com/invite/GuX9687Ebb" target="_blank">
                         <img src={process.env.PUBLIC_URL + 'discord-icon.png'} />
                     </a>
                     <a class="hide" href="https://t.me/Sythetic_Noise" target="_blank">
